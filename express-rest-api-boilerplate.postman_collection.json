@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "30ee809d-d000-4ecc-9996-b5f82658fc94",
+		"name": "ExpressRESTAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Ahmad",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ahmad",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ahmadnajiba@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ahmadahmad",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZGIxNDM4NjZkZTE5M2JiNDkxMjljMCIsImVtYWlsIjoiYWhtYWRuYWppYmFAZ21haWwuY29tIiwiaWF0IjoxNTkxNDE3MTYzLCJleHAiOjE1OTI3MTMxNjN9.LZ6bmrjvg3wcOpcImx5kmlz0bIuGksAW9DCmxFreNXE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZGFmM2MyODI2MjBkNjRjMGZkZTdiNSIsImVtYWlsIjoiYWhtYWRuYWppYmFAZ21haWwuY29tIiwiaWF0IjoxNTkxNDA3NTU0LCJleHAiOjE1OTM5OTk1NTR9.6qQeVXvHP5MTtAvEzFt5YLQYSzgJEz5vm5zr_lv6fJ8",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "sort",
+									"value": "asc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/user/all",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Current User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZGFmM2MyODI2MjBkNjRjMGZkZTdiNSIsImVtYWlsIjoiYWhtYWRuYWppYmFAZ21haWwuY29tIiwiaWF0IjoxNTkxNDA3NTU0LCJleHAiOjE1OTM5OTk1NTR9.6qQeVXvHP5MTtAvEzFt5YLQYSzgJEz5vm5zr_lv6fJ8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/user/me",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout Current User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlZGFmM2MyODI2MjBkNjRjMGZkZTdiNSIsImVtYWlsIjoiYWhtYWRuYWppYmFAZ21haWwuY29tIiwiaWF0IjoxNTkxNDA3NTU0LCJleHAiOjE1OTM5OTk1NTR9.6qQeVXvHP5MTtAvEzFt5YLQYSzgJEz5vm5zr_lv6fJ8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/user/me",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a0464be5-f130-4947-9d91-b2b05c46d23d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1e909131-d362-4a57-81cc-eb285ebc3f25",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "fa098a31-eaa0-48d2-b90a-0dd98da08118",
+			"key": "baseUrl",
+			"value": "localhost:3001",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
