@@ -1,6 +1,6 @@
 Express REST API Boilerplate which use NodeJS, Express, MongoDB, Passport auth with JWT, and Redis.
 
-##Instalation
+## Instalation
 
 Modify ``.env.example`` to ``.env`` file with your own.
 
@@ -8,11 +8,11 @@ Install dependency modules ``npm install``. Make sure you already install MongoD
 
 Run ``node server.js``
 
-Play the API over Postman or similar tools you like!
+Play the API over Postman or similar tools you like! You can use postman collection json file.
 
-##Libraries
+## Libraries
 
-``
+```
 "body-parser": "^1.19.0",
 "dotenv": "^8.2.0",
 "express": "^4.17.1",
@@ -23,9 +23,10 @@ Play the API over Postman or similar tools you like!
 "passport-jwt": "^4.0.0",
 "passport-local": "^1.0.0",
 "passport-local-mongoose": "^6.0.1",
-"redis": "^3.0.2"``
+"redis": "^3.0.2"
+```
 
-##License
+## License
 
 The MIT License (MIT)
 
